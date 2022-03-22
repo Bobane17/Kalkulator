@@ -192,6 +192,19 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    public void dvoBTN(View view){
+        display.setText(Integer.toBinaryString(Integer.parseInt(display.getText().toString())));
+    }
+
+    public void sestBTN(View view){
+        display.setText(Integer.toHexString(Integer.parseInt(display.getText().toString())));
+    }
+
+    public void osemBTN(View view){
+        display.setText(Integer.toOctalString(Integer.parseInt(display.getText().toString())));
+    }
+
+
 
 
 }

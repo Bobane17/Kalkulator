@@ -26,5 +26,16 @@
     <string name="backspace">___</string>
     <string name="display">Enter in a value</string>
 
+    <string name="dvo">[2]</string>
+    <string name="osem">[8]</string>
+    <string name="sest">[16]</string>
+    <string name="ALI">||</string>
+
+    <string name="IN">&&</string>
+    <string name="NE">!</string>
+
+
+
+
 
 </resources>

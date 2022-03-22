@@ -15,6 +15,108 @@
         app:layout_constraintVertical_bias="0.95"
         tools:layout_editor_absoluteX="1dp">
 
+
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/inBTN"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/circle"
+                android:onClick="dvoBTN"
+                android:text="@string/IN"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/neBTN"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/circle"
+                android:onClick="osemBTN"
+                android:text="@string/NE"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/aliBTN"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/circle"
+                android:onClick="sestBTN"
+                android:text="@string/ALI"
+                android:textSize="24sp" />
+
+
+        </TableRow>
+
+
+
+
+
+
+
+
+
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/dvoBTN"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/circle"
+                android:onClick="dvoBTN"
+                android:text="@string/dvo"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/osemBTN"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/circle"
+                android:onClick="osemBTN"
+                android:text="@string/osem"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/sestBTN"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/circle"
+                android:onClick="sestBTN"
+                android:text="@string/sest"
+                android:textSize="24sp" />
+
+
+        </TableRow>
+
+
+
+
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent">
