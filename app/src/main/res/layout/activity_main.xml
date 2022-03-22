@@ -30,7 +30,7 @@
                 android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:background="@drawable/circle"
-                android:onClick="dvoBTN"
+                android:onClick="inBTN"
                 android:text="@string/IN"
                 android:textSize="24sp" />
 
@@ -54,7 +54,7 @@
                 android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:background="@drawable/circle"
-                android:onClick="sestBTN"
+                android:onClick="aliBTN"
                 android:text="@string/ALI"
                 android:textSize="24sp" />
 

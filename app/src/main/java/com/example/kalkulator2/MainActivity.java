@@ -11,6 +11,8 @@ import android.widget.EditText;
 public class MainActivity extends AppCompatActivity {
 
     private EditText display;
+    boolean and = false;
+    boolean or = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -154,6 +156,36 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void equalBTN(View view) {
+
+        if (and){
+            String[] a = display.getText().toString().split(" AND ");
+            if (a[0].equals("1") && a[1].equals("1")){
+                //cout1
+                display.setText("1");
+            }else {
+                //cout 0
+                display.setText("0");
+            }
+            and = false;
+            return;
+        }
+
+        if (or){
+            String[] a = display.getText().toString().split(" OR ");
+            if (a[0].equals("0") && a[1].equals("0")){
+                //cout 0
+                display.setText("0");
+            }else {
+                //cout 1
+                display.setText("1");
+            }
+            or = false;
+            return;
+        }
+
+
+
+
         String userExp = display.getText().toString();
 
         userExp = userExp.replaceAll("÷", "/");
@@ -203,6 +235,19 @@ public class MainActivity extends AppCompatActivity {
     public void osemBTN(View view){
         display.setText(Integer.toOctalString(Integer.parseInt(display.getText().toString())));
     }
+
+
+    public void inBTN(View view){
+        and = true;
+        display.setText(" AND " + display.getText().toString());
+    }
+
+    public void aliBTN(View view){
+        or = true;
+        display.setText(" OR " + display.getText().toString());
+    }
+
+
 
 
 
