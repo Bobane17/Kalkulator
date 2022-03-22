@@ -158,7 +158,7 @@ public class MainActivity extends AppCompatActivity {
     public void equalBTN(View view) {
 
         if (and){
-            String[] a = display.getText().toString().split(" AND ");
+            String[] a = display.getText().toString().split(" IN ");
             if (a[0].equals("1") && a[1].equals("1")){
                 //cout1
                 display.setText("1");
@@ -171,7 +171,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         if (or){
-            String[] a = display.getText().toString().split(" OR ");
+            String[] a = display.getText().toString().split(" ALI ");
             if (a[0].equals("0") && a[1].equals("0")){
                 //cout 0
                 display.setText("0");
@@ -239,13 +239,15 @@ public class MainActivity extends AppCompatActivity {
 
     public void inBTN(View view){
         and = true;
-        display.setText(" AND " + display.getText().toString());
+        display.setText(" IN " + display.getText().toString());
     }
 
     public void aliBTN(View view){
         or = true;
-        display.setText(" OR " + display.getText().toString());
+        display.setText(" ALI " + display.getText().toString());
     }
+
+
 
 
 
